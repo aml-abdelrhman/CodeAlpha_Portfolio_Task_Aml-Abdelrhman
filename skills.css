@@ -1,0 +1,115 @@
+/* ============================================================
+   SKILLS SECTION
+   ============================================================ */
+.skills {
+  position: relative;
+  z-index: 10;
+  padding: 5rem 0;
+  background: transparent;
+}
+
+.skills__inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.skills__title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text);
+}
+
+/* ── Grid ── */
+.skills__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* ── Card ── */
+.skill-card {
+  width: 9rem;           /* w-36 */
+  height: 9rem;          /* h-36 */
+  padding: 1.5rem;
+  border-radius: .75rem;
+  border: 1px solid #e5e7eb;          /* gray-200 */
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  transition: transform .3s cubic-bezier(.34,1.56,.64,1),
+              box-shadow .3s ease;
+}
+
+html.dark .skill-card {
+  border-color: #374151;             /* gray-700 */
+  background: rgba(30,41,59,0.3);   /* slate-800/30 */
+}
+
+.skill-card:hover {
+  transform: scale(1.15);
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+/* Icon wrapper */
+.skill-card__icon {
+  width: 2.5rem;    /* 40px — text-4xl equivalent */
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Name label */
+.skill-card__name {
+  font-size: 1rem;        /* text-lg approx */
+  font-weight: 600;
+  color: #1f2937;         /* gray-800 */
+  transition: color .3s;
+  line-height: 1.2;
+}
+
+html.dark .skill-card__name { color: #f3f4f6; } /* gray-100 */
+
+/* ── Floating / bobbing animation ── */
+.float-icon {
+  animation: floatBob 2s ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes floatBob {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-5px); }
+}
+
+/* ── Staggered reveal-down delay using CSS custom property ── */
+/* Each card's --i is set inline on the element */
+.skill-card.reveal-down {
+  transition-delay: calc(var(--i, 0) * 0.05s + 0s);
+}
+
+/* ── Responsive: smaller screens → smaller cards ── */
+@media (max-width: 480px) {
+  .skill-card {
+    width: 7.5rem;
+    height: 7.5rem;
+    padding: 1rem;
+  }
+  .skill-card__name { font-size: .875rem; }
+}

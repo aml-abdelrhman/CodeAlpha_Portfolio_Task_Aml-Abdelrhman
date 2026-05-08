@@ -1,0 +1,115 @@
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+/* Top divider line */
+.footer-divider {
+  border-top: 1px solid #d1d5db;   /* gray-300 */
+  transition: border-color .3s;
+}
+
+html.dark .footer-divider {
+  border-color: #374151;           /* gray-700 */
+}
+
+/* Footer wrapper */
+.footer {
+  position: relative;
+  padding: 2.5rem 0;
+  background: rgba(241,245,249,0.7);   /* slate-100/70 */
+  color: #374151;                       /* gray-700 */
+  transition: background .3s, color .3s;
+}
+
+html.dark .footer {
+  background: rgba(15,23,42,0.8);      /* slate-900/80 */
+  color: #d1d5db;                       /* gray-300 */
+}
+
+/* Inner row */
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer__inner { flex-direction: row; }
+}
+
+/* ── Nav links ── */
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-link {
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  transition: color .3s, transform .2s;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #ec4899;         /* pink-500 */
+  transform: scale(1.1);
+}
+
+/* ── Social icons ── */
+.footer__social {
+  display: flex;
+  gap: 1rem;
+  margin-right: 0;       /* mr-40 removed — handled by flex justify */
+}
+
+@media (min-width: 768px) {
+  .footer__social { margin-right: 10rem; }  /* matches mr-40 */
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;          /* text-2xl */
+  height: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  transition: color .3s, transform .25s, filter .3s;
+}
+
+.social-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.social-icon:hover {
+  color: #ec4899;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px rgba(236,72,153,0.7));
+}
+
+.social-icon:active {
+  transform: scale(0.9);
+}
+
+/* ── Download CV button ── */
+/* reuses .btn .btn--pink from styles.css — nothing extra needed */
+
+/* ── Copyright ── */
+.footer__copy {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: .875rem;
+  color: #6b7280;         /* gray-500 */
+  transition: color .3s;
+}
+
+html.dark .footer__copy { color: #9ca3af; }  /* gray-400 */

@@ -1,0 +1,180 @@
+/* ============================================================
+   PROJECTS SECTION
+   ============================================================ */
+.projects {
+  padding: 5rem 0;
+  background: #f8fafc;          /* slate-50 */
+  transition: background .3s;
+}
+
+html.dark .projects {
+  background: rgba(15,23,42,0.4);  /* slate-900/40 */
+}
+
+.projects__inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.projects__title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text);
+}
+
+@media (min-width: 768px) {
+  .projects__title { font-size: 2.25rem; }
+}
+
+/* ── Grid ── */
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  justify-items: center;
+}
+
+@media (min-width: 640px) {
+  .projects__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .projects__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 4rem;          /* xl:gap-24 horizontal */
+  }
+}
+
+/* ── Card ── */
+.proj-card {
+  position: relative;
+  width: 100%;
+  max-width: 20rem;             /* ~w-80 */
+  border-radius: .75rem;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.12);
+  background: #ffffff;
+  color: #1f2937;
+  transition: background .3s, color .3s;
+}
+
+html.dark .proj-card {
+  background: #1e293b;          /* slate-800 */
+  color: #e5e7eb;
+}
+
+/* ── Image ── */
+.proj-card__img {
+  width: 100%;
+  height: 18rem;                /* h-72 */
+  object-fit: cover;
+  display: block;
+  transition: transform .3s ease;
+}
+
+.proj-card:hover .proj-card__img {
+  transform: scale(1.05);
+}
+
+/* ── Overlay (shown on hover) ── */
+.proj-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+html.dark .proj-card__overlay {
+  background: rgba(15,23,42,0.8);
+}
+
+.proj-card:hover .proj-card__overlay {
+  opacity: 1;
+}
+
+.proj-card__name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: .75rem;
+  color: #111827;
+}
+
+html.dark .proj-card__name { color: #f9fafb; }
+
+.proj-card__tech {
+  font-size: .8rem;
+  color: #475569;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+html.dark .proj-card__tech { color: #94a3b8; }
+
+/* ── Buttons ── */
+.proj-card__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.proj-btn {
+  padding: .5rem 1rem;
+  border: 2px solid #9ca3af;   /* gray-400 */
+  border-radius: .375rem;
+  font-size: .875rem;
+  font-weight: 500;
+  color: #374151;               /* gray-700 */
+  text-decoration: none;
+  transition: border-color .3s, transform .2s, color .3s;
+  cursor: pointer;
+}
+
+html.dark .proj-btn {
+  color: #e5e7eb;
+  border-color: #4b5563;
+}
+
+.proj-btn:hover {
+  border-color: #FF69B4;        /* pink — matches whileHover borderColor */
+  transform: scale(1.1);
+  color: #FF69B4;
+}
+
+/* ============================================================
+   SCROLL REVEAL — Left / Right variants
+   (add to existing reveal system in main.js)
+   ============================================================ */
+.reveal-left {
+  opacity: 1; /* تغيير للتأكد من الظهور */
+  transform: translateX(-80px);
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity .7s ease, transform .7s ease;
+  transition-delay: calc(var(--i, 0) * 0.08s);
+}
+
+.reveal-right {
+  opacity: 1; /* تغيير للتأكد من الظهور */
+  transform: translateX(80px);
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity .7s ease, transform .7s ease;
+  transition-delay: calc(var(--i, 0) * 0.08s);
+}
+
+.reveal-left.is-visible,
+.reveal-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}

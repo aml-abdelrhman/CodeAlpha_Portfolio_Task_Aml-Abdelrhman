@@ -1,0 +1,95 @@
+/* ============================================================
+   ABOUT ME SECTION
+   ============================================================ */
+.about {
+  position: relative;
+  padding: 5rem 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background .3s;
+}
+
+html.dark .about {
+  background: rgba(17, 24, 39, 0.7);   /* gray-900/70 */
+}
+
+.about__inner {
+  max-width: 56rem;          /* max-w-4xl */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+/* ── Title ── */
+.about__title {
+  font-size: 2.25rem;        /* text-4xl */
+  font-weight: 800;          /* font-extrabold */
+  letter-spacing: -0.025em;  /* tracking-tight */
+  margin-bottom: 2rem;
+  color: #1f2937;            /* gray-800 */
+  transition: color .3s;
+}
+
+html.dark .about__title { color: #ffffff; }
+
+/* ── Body ── */
+.about__body {
+  font-size: 1.125rem;       /* text-lg */
+  line-height: 1.75;         /* leading-relaxed */
+  color: #374151;            /* gray-700 */
+  max-width: 48rem;          /* max-w-3xl */
+  margin: 0 auto;
+  transition: color .3s;
+}
+
+html.dark .about__body { color: #d1d5db; }  /* gray-300 */
+
+/* ── Highlight spans ── */
+.highlight            { font-weight: 600; }
+.highlight--pink      { color: #ec4899; }   /* pink-500    */
+.highlight--blue      { color: #3b82f6; }   /* blue-500    */
+.highlight--sky       { color: #0ea5e9; }   /* sky-500     */
+.highlight--purple    { color: #a855f7; }   /* purple-500  */
+.highlight--yellow    { color: #eab308; }   /* yellow-500  */
+.highlight--orange    { color: #f97316; }   /* orange-500  */
+.highlight--blue-dark { color: #1d4ed8; }   /* blue-700    */
+.highlight--pink-light{ color: #f472b6; }   /* pink-400    */
+.highlight--indigo    { color: #6366f1; }   /* indigo-500  */
+.highlight--green     { color: #22c55e; }   /* green-500   */
+.highlight--teal      { color: #14b8a6; }   /* teal-500    */
+.highlight--purple-light{color:#c084fc; }   /* purple-400  */
+.highlight--red       { color: #ef4444; }   /* red-500     */
+.highlight--gray      { color: #6b7280; }   /* gray-500    */
+
+/* ============================================================
+   SCROLL-REVEAL  (replaces framer-motion whileInView)
+   Elements start hidden; JS adds .is-visible to animate them
+   ============================================================ */
+
+/* Slide in from top (title) */
+.reveal-up {
+  opacity: 0;
+  opacity: 1; /* تغيير من 0 لـ 1 للتأكد من الظهور */
+  transform: translateY(-70px);
+  transition: opacity .6s ease, transform .6s ease;
+  transform: translateY(-30px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+/* Slide in from bottom (paragraph) */
+.reveal-down {
+  opacity: 0;
+  opacity: 1; /* تغيير من 0 لـ 1 للتأكد من الظهور */
+  transform: translateY(70px);
+  transition: opacity .9s ease .5s, transform .9s ease .5s;
+  transform: translateY(30px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+/* Triggered state */
+.reveal-up.is-visible,
+.reveal-down.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

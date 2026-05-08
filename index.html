@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aml Abdelrhman - Portfolio</title>
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="skills.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+     <header class="navbar" id="navbar">
+  <div class="navbar__inner">
+
+    <!-- Logo -->
+    <div class="navbar__brand">
+      <div class="navbar__logo">A</div>
+      <span class="navbar__name">AML ABDELRHMAN ABDELHADY</span>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="navbar__links" id="desktopNav" aria-label="Main navigation">
+      <a href="#home"     class="nav-link">Home</a>
+      <a href="#about-me" class="nav-link">About me</a>
+      <a href="#skills"   class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact"  class="nav-link">Contact</a>
+
+      <a href="public/Aml-Abdelrhman-CV.pdf"
+         download="Aml-Abdelrhman-CV.pdf"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn btn--accent">
+        Download CV
+      </a>
+
+      <!-- Theme Toggle (desktop) -->
+      <button class="theme-toggle" id="themeToggleDesktop" aria-label="Toggle theme">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+    </nav>
+
+    <!-- Mobile Controls -->
+    <div class="navbar__mobile-controls">
+      <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M4 6H20M4 12H20M4 18H20"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <a href="#home"     class="nav-link mobile-link">Home</a>
+      <a href="#about-me" class="nav-link mobile-link">About me</a>
+      <a href="#skills"   class="nav-link mobile-link">Skills</a>
+      <a href="#projects" class="nav-link mobile-link">Projects</a>
+      <a href="#contact"  class="nav-link mobile-link">Contact</a>
+
+      <a href="public/Aml-Abdelrhman-CV.pdf"
+         download="Aml-Abdelrhman-CV.pdf"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn btn--pink">
+        Download CV
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="home" class="hero">
+  <div class="hero__inner">
+
+    <!-- Left: Text -->
+    <div class="hero__text animate-slide-in">
+      <h1 class="hero__title">
+        AML ABDELRHMAN — Front-End Developer
+      </h1>
+      <div class="hero__subtitle">
+        Crafting modern, responsive, and high-performance web experiences that delight users.
+        <div class="typewriter-wrapper">
+          <span class="typewriter" id="typewriter"></span>
+          <span class="typewriter-cursor">|</span>
+        </div>
+      </div>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--accent">View Projects</a>
+        <a href="public/Aml-Abdelrhman-CV.pdf"
+           download="Aml-Abdelrhman-CV.pdf"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn--pink">
+          Download CV
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="hero__image-wrapper animate-fade-in">
+      <div class="hero__image-rotate">
+        <!-- Glow -->
+        <div class="hero__glow"></div>
+        <!-- Card -->
+        <div class="hero__card">
+          <div class="hero__photo"></div>
+          <div class="hero__overlay"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT ME
+     ============================================================ -->
+<section id="about-me" class="about">
+  <div class="about__inner">
+
+    <h2 class="about__title reveal-up">About Me</h2>
+
+    <p class="about__body reveal-down">
+      I am a passionate
+      <span class="highlight highlight--pink">Frontend Developer</span>
+      and web designer with hands-on experience building
+      <span class="highlight highlight--blue"> modern, responsive, and user-friendly websites</span>.
+
+      I specialize in
+      <span class="highlight highlight--blue">React.js</span>,
+      <span class="highlight highlight--sky"> Tailwind CSS</span>,
+      <span class="highlight highlight--purple"> Bootstrap</span>,
+      <span class="highlight highlight--yellow"> JavaScript (ES6+)</span>,
+      <span class="highlight highlight--orange"> HTML5</span>,
+      <span class="highlight highlight--blue-dark"> CSS3</span>,
+      <span class="highlight highlight--pink-light"> Framer Motion</span>,
+      <span class="highlight highlight--indigo"> Redux</span>,
+      <span class="highlight highlight--green"> Vite</span>,
+      <span class="highlight highlight--teal"> React Router</span>,
+      <span class="highlight highlight--purple-light"> Axios</span>,
+      <span class="highlight highlight--red"> REST APIs &amp; JSON</span>, and
+      <span class="highlight highlight--gray"> Git &amp; GitHub</span> for version control.
+
+      I have worked on multiple personal and collaborative projects,
+      including landing pages, e-commerce websites, portfolio websites, dashboards,
+      and interactive UI components. Each project allowed me to sharpen my skills
+      in performance optimization, accessibility, responsive layouts, smooth animations,
+      and engaging user experiences.
+
+      I am continuously learning new tools and trends to deliver creative, functional,
+      and visually appealing designs that help businesses and individuals stand out online.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SKILLS
+     SVG icons inline — no icon library needed
+     ============================================================ -->
+<section id="skills" class="skills">
+  <div class="skills__inner">
+
+    <h2 class="skills__title reveal-up">Skills</h2>
+
+    <div class="skills__grid">
+
+      <!-- React JS -->
+      <div class="skill-card reveal-down" style="--i:0">
+        <div class="skill-card__icon float-icon" style="--delay:0s">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="2.05" fill="#3b82f6"/>
+            <g stroke="#3b82f6" stroke-width="1.1" fill="none">
+              <ellipse rx="10" ry="3.9" cx="12" cy="12"/>
+              <ellipse rx="10" ry="3.9" cx="12" cy="12" transform="rotate(60 12 12)"/>
+              <ellipse rx="10" ry="3.9" cx="12" cy="12" transform="rotate(120 12 12)"/>
+            </g>
+          </svg>
+        </div>
+        <span class="skill-card__name">React JS</span>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="skill-card reveal-down" style="--i:1">
+        <div class="skill-card__icon float-icon" style="--delay:.1s">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <rect width="24" height="24" rx="2" fill="#eab308"/>
+            <path d="M7 17.5c.4.7 1 1.2 2 1.2 1.1 0 1.8-.6 1.8-1.6V11h-1.6v6c0 .5-.2.7-.6.7-.4 0-.6-.3-.8-.6L7 17.5zm5.3-.2c.5.8 1.2 1.4 2.5 1.4 1.4 0 2.3-.7 2.3-1.8 0-1-.6-1.5-1.8-2l-.5-.2c-.6-.3-.9-.5-.9-.9 0-.4.3-.6.7-.6.4 0 .7.2.9.6l1.2-.8c-.5-.9-1.2-1.2-2.1-1.2-1.3 0-2.1.8-2.1 1.9 0 1 .6 1.5 1.7 2l.5.2c.7.3 1 .5 1 1s-.4.7-.9.7c-.6 0-1-.3-1.3-.8l-1.2.7z" fill="#111"/>
+          </svg>
+        </div>
+        <span class="skill-card__name">JavaScript</span>
+      </div>
+
+      <!-- HTML5 -->
+      <div class="skill-card reveal-down" style="--i:2">
+        <div class="skill-card__icon float-icon" style="--delay:.2s">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 2l1.6 18L12 22l7.4-2L21 2H3zm14.2 5.4H8.7l.2 2.3h8.1l-.7 7.4-4.3 1.2-4.3-1.2-.3-3.3h2.2l.2 1.6 2.2.6 2.2-.6.2-2.6H7.9L7.3 7.4h9.1l-.2-.0z" fill="#f97316"/>
+          </svg>
+        </div>
+        <span class="skill-card__name">HTML</span>
+      </div>
+
+      <!-- CSS3 -->
+      <div class="skill-card reveal-down" style="--i:3">
+        <div class="skill-card__icon float-icon" style="--delay:.3s">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 2l1.6 18L12 22l7.4-2L21 2H3zm13.3 13.3-4.3 1.2-4.3-1.2-.3-3h2.2l.2 1.5 2.2.6 2.2-.6.2-2.4H8.2l-.2-2.3h7.8l.2-2H7.7L7.4 7h9.2l-.3 8.3z" fill="#1d4ed8"/>
+          </svg>
+        </div>
+        <span class="skill-card__name">CSS</span>
+      </div>
+
+      <!-- Tailwind -->
+      <div class="skill-card reveal-down" style="--i:4">
+        <div class="skill-card__icon float-icon" style="--delay:.4s">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 6C9.6 6 8.1 7.2 7.5 9.6c.9-1.2 1.95-1.65 3.15-1.35.685.171 1.174.668 1.716 1.219C13.259 10.39 14.33 11.5 16.5 11.5c2.4 0 3.9-1.2 4.5-3.6-.9 1.2-1.95 1.65-3.15 1.35-.685-.171-1.174-.668-1.716-1.219C15.241 7.11 14.17 6 12 6zM7.5 11.5C5.1 11.5 3.6 12.7 3 15.1c.9-1.2 1.95-1.65 3.15-1.35.685.171 1.174.668 1.716 1.219C8.759 15.89 9.83 17 12 17c2.4 0 3.9-1.2 4.5-3.6-.9 1.2-1.95 1.65-3.15 1.35-.685-.171-1.174-.668-1.716-1.219C10.741 12.61 9.67 11.5 7.5 11.5z" fill="#14b8a6"/>
+          </svg>
+        </div>
+        <span class="skill-card__name">Tailwind</span>
+      </div>
+
+      <!-- Bootstrap -->
+      <div class="skill-card reveal-down" style="--i:5">
+        <div class="skill-card__icon float-icon" style="--delay:.5s">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.375 3A3.375 3.375 0 003 6.375v11.25A3.375 3.375 0 006.375 21h11.25A3.375 3.375 0 0021 17.625V6.375A3.375 3.375 0 0017.625 3H6.375zm1.875 3h4.5c1.864 0 3 1.014 3 2.625 0 1.026-.527 1.89-1.39 2.32C15.55 11.32 16.25 12.27 16.25 13.5c0 1.78-1.2 3-3.25 3H8.25V6zm2 1.75v2.75h2.25c.87 0 1.375-.47 1.375-1.375S14.37 7.75 13.5 7.75H10.25zm0 4.5v3h2.5c1 0 1.625-.53 1.625-1.5s-.625-1.5-1.625-1.5h-2.5z" fill="#9333ea"/>
+          </svg>
+        </div>
+        <span class="skill-card__name">Bootstrap</span>
+      </div>
+
+      <!-- Framer Motion -->
+      <div class="skill-card reveal-down" style="--i:6">
+        <div class="skill-card__icon float-icon" style="--delay:.6s">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4h16v8H4zM4 12h8l8 8H4z" fill="#ec4899"/>
+          </svg>
+        </div>
+        <span class="skill-card__name">Framer Motion</span>
+      </div>
+
+      <!-- Redux -->
+      <div class="skill-card reveal-down" style="--i:7">
+        <div class="skill-card__icon float-icon" style="--delay:.7s">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.634 16.504c.87-.075 1.543-.84 1.5-1.754-.043-.914-.794-1.648-1.708-1.648h-.061a1.71 1.71 0 00-1.648 1.769c.043.479.214.869.494 1.154-1.048 2.038-2.621 3.536-5.005 4.795-1.603.838-3.296 1.154-4.944.93-1.378-.195-2.456-.81-3.116-1.798-.988-1.499-1.078-3.116-.255-4.734.6-1.17 1.499-2.023 2.099-2.472-.15-.389-.27-.973-.344-1.409-4.554 3.278-4.09 7.702-2.697 9.765 1.032 1.558 3.161 2.547 5.501 2.547.63 0 1.274-.06 1.918-.21 4.083-.81 7.18-3.337 8.267-6.935zm5.357-4.307c-2.427-2.836-5.996-4.395-10.087-4.395h-.524c-.27-.554-.854-.93-1.498-.93h-.06c-.944 0-1.694.779-1.648 1.723.043.914.793 1.648 1.708 1.648h.06c.674-.03 1.244-.435 1.544-.99h.569c2.412 0 4.689.705 6.757 2.098 1.588 1.063 2.726 2.442 3.385 4.1.554 1.318.524 2.607-.045 3.716-.855 1.647-2.293 2.547-4.201 2.547-1.228 0-2.397-.374-3.01-.644-.33.3-.93.779-1.348 1.078 1.318.599 2.666.944 3.954.944 2.951 0 5.141-1.648 5.966-3.266.884-1.798.824-4.824-1.522-7.629zM7.706 16.069c.044.914.794 1.648 1.708 1.648h.06c.944 0 1.694-.779 1.648-1.723-.043-.914-.793-1.648-1.708-1.648h-.06c-.06 0-.135 0-.195.015-1.153-1.918-1.634-3.986-1.453-6.248.12-1.708.674-3.191 1.618-4.384.779-1.018 2.277-1.513 3.296-1.543 2.831-.06 4.024 3.477 4.113 4.884l1.378.42C17.737 3.545 15.07 1 12.087 1c-2.697 0-5.184 1.958-6.172 4.854-.66 1.978-.45 4.12.255 6.098-.15.195-.255.45-.255.75l-.209-.633z" fill="#7e22ce"/>
+          </svg>
+        </div>
+        <span class="skill-card__name">Redux</span>
+      </div>
+
+      <!-- Vite -->
+      <div class="skill-card reveal-down" style="--i:8">
+        <div class="skill-card__icon float-icon" style="--delay:.8s">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.5 3.5L12.9 20.3a.5.5 0 01-.9-.1L9.3 12 2.5 3.5h19z" fill="#22c55e"/>
+            <path d="M21.5 3.5l-9.5 7.5L9.3 12l2.1-8.5h10.1z" fill="#86efac"/>
+          </svg>
+        </div>
+        <span class="skill-card__name">Vite</span>
+      </div>
+
+      <!-- Git -->
+      <div class="skill-card reveal-down" style="--i:9">
+        <div class="skill-card__icon float-icon" style="--delay:.9s">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.546 10.93L13.067.452a1.55 1.55 0 00-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 012.326 2.344l2.658 2.66a1.838 1.838 0 11-1.101 1.045L12.98 8.98v6.532a1.838 1.838 0 11-1.51-.062V8.895a1.838 1.838 0 01-.997-2.414L7.768 3.727l-7.314 7.3a1.55 1.55 0 000 2.189l10.48 10.477a1.55 1.55 0 002.187 0l10.424-10.42a1.55 1.55 0 000-2.19" fill="#ef4444"/>
+          </svg>
+        </div>
+        <span class="skill-card__name">Git</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PROJECTS
+     ⚠️ استبدلي مسارات الصور بالمسارات الصحيحة عندك
+     ============================================================ -->
+<section id="projects" class="projects">
+  <div class="projects__inner">
+
+    <h2 class="projects__title reveal-up">Projects</h2>
+
+    <div class="projects__grid">
+
+   
+      <!-- Card 7 -->
+      <div class="proj-card reveal-left" style="--i:6">
+        <img src="assets/images/CareStore.PNG" alt="Care Store" class="proj-card__img" loading="lazy">
+        <div class="proj-card__overlay">
+          <h3 class="proj-card__name">Care Store Website</h3>
+          <p class="proj-card__tech">React • Tailwind CSS</p>
+          <div class="proj-card__btns">
+            <a href="https://aml-abdelrhman.github.io/Care-Store/" target="_blank" rel="noreferrer" class="proj-btn">Demo</a>
+            <a href="https://github.com/aml-abdelrhman/Care-Store.git" target="_blank" rel="noreferrer" class="proj-btn">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="proj-card reveal-right" style="--i:7">
+        <img src="assets/images/sera.PNG" alt="Sera Café" class="proj-card__img" loading="lazy">
+        <div class="proj-card__overlay">
+          <h3 class="proj-card__name">Sera Café Website</h3>
+          <p class="proj-card__tech">React • Bootstrap</p>
+          <div class="proj-card__btns">
+            <a href="https://aml-abdelrhman.github.io/sera-cafe/" target="_blank" rel="noreferrer" class="proj-btn">Demo</a>
+            <a href="https://github.com/aml-abdelrhman/sera-cafe.git" target="_blank" rel="noreferrer" class="proj-btn">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="proj-card reveal-left" style="--i:8">
+        <img src="assets/images/MORK..PNG" alt="MORK Brand" class="proj-card__img" loading="lazy">
+        <div class="proj-card__overlay">
+          <h3 class="proj-card__name">MORK Brand Website</h3>
+          <p class="proj-card__tech">React • Vite</p>
+          <div class="proj-card__btns">
+            <a href="https://aml-abdelrhman.github.io/MORK/" target="_blank" rel="noreferrer" class="proj-btn">Demo</a>
+            <a href="https://github.com/aml-abdelrhman/MORK.git" target="_blank" rel="noreferrer" class="proj-btn">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="proj-card reveal-right" style="--i:9">
+        <img src="assets/images/ECY.PNG" alt="ECY Educational" class="proj-card__img" loading="lazy">
+        <div class="proj-card__overlay">
+          <h3 class="proj-card__name">ECY Educational Web</h3>
+          <p class="proj-card__tech">React • Vite</p>
+          <div class="proj-card__btns">
+            <a href="https://aml-abdelrhman.github.io/ECY-Educational-Web/" target="_blank" rel="noreferrer" class="proj-btn">Demo</a>
+            <a href="https://github.com/aml-abdelrhman/ECY-Educational-Web.git" target="_blank" rel="noreferrer" class="proj-btn">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="proj-card reveal-left" style="--i:10">
+        <img src="assets/images/saudi restaurant.PNG" alt="Saudi Taste Restaurant" class="proj-card__img" loading="lazy">
+        <div class="proj-card__overlay">
+          <h3 class="proj-card__name">Saudi Taste Restaurant</h3>
+          <p class="proj-card__tech">React • Vite</p>
+          <div class="proj-card__btns">
+            <a href="https://aml-abdelrhman.github.io/restaurant-website/" target="_blank" rel="noreferrer" class="proj-btn">Demo</a>
+            <a href="https://github.com/aml-abdelrhman/restaurant-website.git" target="_blank" rel="noreferrer" class="proj-btn">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="proj-card reveal-right" style="--i:11">
+        <img src="assets/images/delivery.PNG" alt="Delivery X" class="proj-card__img" loading="lazy">
+        <div class="proj-card__overlay">
+          <h3 class="proj-card__name">Delivery X Website</h3>
+          <p class="proj-card__tech">JavaScript • Bootstrap</p>
+          <div class="proj-card__btns">
+            <a href="https://aml-abdelrhman.github.io/Deliver-X/" target="_blank" rel="noreferrer" class="proj-btn">Demo</a>
+            <a href="https://github.com/aml-abdelrhman/Deliver-X.git" target="_blank" rel="noreferrer" class="proj-btn">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="proj-card reveal-left" style="--i:12">
+        <img src="assets/images/CRUDS.PNG" alt="CRUDS System" class="proj-card__img" loading="lazy">
+        <div class="proj-card__overlay">
+          <h3 class="proj-card__name">CRUDS – Product Management</h3>
+          <p class="proj-card__tech">JavaScript • HTML • CSS</p>
+          <div class="proj-card__btns">
+            <a href="https://aml-abdelrhman.github.io/CRUDS-SYSTEM/" target="_blank" rel="noreferrer" class="proj-btn">Demo</a>
+            <a href="https://github.com/aml-abdelrhman/CRUDS-SYSTEM.git" target="_blank" rel="noreferrer" class="proj-btn">Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.projects__grid -->
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="contact" class="contact">
+  <div class="contact__inner">
+
+    <h2 class="contact__title reveal-up">Contact</h2>
+
+    <div class="contact__layout">
+
+      <!-- ── Social Links ── -->
+      <div class="contact__links">
+
+        <a href="https://github.com/aml-abdelrhman"
+           target="_blank" rel="noreferrer"
+           class="contact-link reveal-left" style="--i:0">
+          <!-- GitHub SVG -->
+          <svg class="contact-link__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+
+        <a href="https://linkedin.com/in/aml-abdelrhman-8b849a372"
+           target="_blank" rel="noreferrer"
+           class="contact-link reveal-left" style="--i:1">
+          <!-- LinkedIn SVG -->
+          <svg class="contact-link__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.984V9h3.102v1.561h.046c.432-.817 1.49-1.678 3.067-1.678 3.28 0 3.885 2.159 3.885 4.966v6.603zM5.337 7.433a1.8 1.8 0 110-3.6 1.8 1.8 0 010 3.6zm1.567 13.019H3.77V9h3.134v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=amlabdelrhman960@gmail.com"
+           target="_blank" rel="noreferrer"
+           class="contact-link reveal-left" style="--i:2">
+          <!-- Email SVG -->
+          <svg class="contact-link__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          <span>Email</span>
+        </a>
+
+        <a href="https://wa.me/01063229052"
+           target="_blank" rel="noreferrer"
+           class="contact-link reveal-left" style="--i:3">
+          <!-- WhatsApp SVG -->
+          <svg class="contact-link__icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.852L.057 23.5a.5.5 0 00.61.61l5.763-1.506A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.946 9.946 0 01-5.193-1.453l-.37-.22-3.84 1.004 1.03-3.74-.242-.385A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+
+      </div>
+
+      <!-- ── Contact Form ── -->
+      <form class="contact__form" id="contactForm" novalidate>
+
+        <div class="form-field reveal-down" style="--i:0">
+          <input
+            type="text"
+            name="name"
+            id="contactName"
+            placeholder="Your name"
+            required
+            class="form-input"
+          />
+        </div>
+
+        <div class="form-field reveal-down" style="--i:1">
+          <input
+            type="email"
+            name="email"
+            id="contactEmail"
+            placeholder="Email"
+            required
+            class="form-input"
+          />
+        </div>
+
+        <div class="form-field reveal-down" style="--i:2">
+          <textarea
+            name="message"
+            id="contactMessage"
+            placeholder="Message"
+            rows="6"
+            required
+            class="form-input form-textarea"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="form-submit reveal-down" style="--i:3" id="submitBtn">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<div class="footer-divider"></div>
+
+<footer class="footer reveal-down">
+  <div class="footer__inner">
+
+    <!-- Nav Links -->
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="#home"     class="footer-link">Home</a>
+      <a href="#about-me" class="footer-link">About me</a>
+      <a href="#skills"   class="footer-link">Skills</a>
+      <a href="#projects" class="footer-link">Projects</a>
+      <a href="#contact"  class="footer-link">Contact</a>
+    </nav>
+
+    <!-- Social Icons -->
+    <div class="footer__social">
+      <!-- GitHub -->
+      <a href="https://github.com/aml-abdelrhman"
+         target="_blank" rel="noreferrer"
+         aria-label="GitHub"
+         class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+        </svg>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/aml-abdelrhman-8b849a372"
+         target="_blank" rel="noreferrer"
+         aria-label="LinkedIn"
+         class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.984V9h3.102v1.561h.046c.432-.817 1.49-1.678 3.067-1.678 3.28 0 3.885 2.159 3.885 4.966v6.603zM5.337 7.433a1.8 1.8 0 110-3.6 1.8 1.8 0 010 3.6zm1.567 13.019H3.77V9h3.134v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Download CV -->
+    <a href="public/Aml-Abdelrhman-CV.pdf"
+       download="Aml-Abdelrhman-CV.pdf"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn btn--pink footer__cv">
+      Download CV
+    </a>
+
+  </div>
+
+  <!-- Copyright -->
+  <p class="footer__copy">
+    © <span id="footerYear"></span> Aml Abdelrhman. All rights reserved.
+  </p>
+</footer>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script src="main.js" defer></script>
+
+</body>
+</html>
